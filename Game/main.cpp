@@ -1,13 +1,17 @@
-﻿#include <SFML/Audio.hpp>
+#include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 
 #include "Classes/Ball.h"
 #include "Classes/Pong.h"
 
+#include "hideConsole.h"
+
 int score1_{};
 int score2_{};
 
 int main() {
+    hideConsole();
+
     sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "Gang Bang Michala");
 
     Pong pong1;
